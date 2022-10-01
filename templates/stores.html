@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block page_content %}
-  <h2 class="mb-5">Tiendas</h2>
-  <a href="create_store">Agregar tienda</a>
+  <h2 class="mb-5">Stores</h2>
+  <a href="create_store" class="btn btn-primary m-3">Add store</a>
   {% for store in value %}
   <div class="container">
     <ol class="list-group list-group-numbered">
       <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
           <div class="fw-bold"><strong>{{store['name']}}</strong></div>
-          <a href="store/{{store['name']}}">Ver items</a>
+          <a href="store/{{store['name']}}">See items</a>
         </div>
       </li>
     </ol>
